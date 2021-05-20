@@ -1,0 +1,236 @@
+﻿<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>MainWebsite</title>
+    <style>
+
+        img{
+            width:20vw;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: lightgrey;
+            text-decoration: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            background-color: black;
+            margin: 0px;
+            width: 100vw;
+            font-size: 2vw;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: url("img/background.jpg");
+            background-position: center;
+            background-size: cover;
+            
+        }
+
+        #MidPanel{
+            background-color:transparent;
+            width:100vw;
+            text-align:center;
+            color:white;
+        }
+
+        #BottomPanel{
+            background-color:black;
+            width:100vw;
+            text-align:center;
+            color:white;
+            font-size:1vw;
+        }
+
+        .MenuButton {
+            float: right;
+            text-align:center;
+            padding-left:1vw;
+            padding-right:1vw;
+        }
+
+        #AboutMePanel {
+            width: 96vw;
+            height: 50vw;
+            background-color: transparent;
+            padding-top: 3vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+
+        #SkilsPanel {
+            width: 96vw;
+            height: 50vw;
+            background-color: transparent;
+            padding-top: 3vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            text-align: left;
+        }
+
+        #ContactPanel {
+            width: 96vw;
+            height: 50vw;
+            background-color: transparent;
+            padding-top: 3vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+
+        #MenuPanel {
+            background-color: black;
+            width: 100vw;
+            text-align: right;
+            color: white;
+            height: 2vw;
+            padding-bottom: 0.5vw;
+            padding-top: 0.5vw;
+            position: fixed;
+        }
+
+        .LogoImage {
+            width: 5vw;
+        }
+
+        #SocialMediaPanel {
+            background-color: transparent;
+            height: 10vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
+        }
+
+        .SocialMediaSlot {
+            background-color: transparent;
+            width: 8vw;
+            height: 8vw;
+            float: left;
+            margin: 1vw;
+            display: inline-block;
+        }
+
+        #GithubTile {
+            background-color: white;
+            width: 8vw;
+            height: 8vw;
+        }
+
+        a.TileLink{
+            display:block;
+            width:8vw;
+            height:8vw;
+        }
+
+        .LogoImageLink{
+            width:8vw;
+        }
+
+        .SocialMediaSlot:hover{
+            opacity:0.8;
+        }
+
+    </style>
+
+    <script>
+
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("MenuPanel");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+    </script>
+</head>
+
+<body>
+    
+
+   
+    <div id="MenuPanel">
+        <div class="MenuButton">
+            <a href="#ContactPanel">Contact</a>
+        </div>
+        <div class="MenuButton">
+            <a href="#SkilsPanel">Skils</a>
+        </div>
+        <div class="MenuButton">
+            <a href="#AboutMePanel">About Me</a>
+        </div>
+    </div>
+    
+    <div id="MidPanel">
+            <div id="AboutMePanel">
+                <h1>Hi I am nozbi</h1>
+                <img src="img/profile.png" />
+                <br />
+                <h4>I am 19 years old programmer. I am coding for 2 years. I used to play computer games but now I prefer to make them. That's why I am creating my own game in Unreal Engine in free time. I love listening music when I code. It keeps me concentrated and motivated.</h4>
+                <h6>IT sector is still changing bescause of new technologies. That's why my motto is: "Improvise, adapt, overcome"</h6>
+            </div>
+            <div id="SkilsPanel">
+                <h3>Technologies I am experienced with:</h3>
+                <h4>Frontend:</h4>
+                <img src="img/html.png" class="LogoImage" />
+                <img src="img/css.png" class="LogoImage" />
+                <img src="img/javascript.png" class="LogoImage" />
+                <h4>Backend:</h4>
+                <img src="img/c++.png" class="LogoImage" />
+                <h4>Other:</h4>
+                <img src="img/unrealengine.png" class="LogoImage" />
+            </div>
+            <div id="ContactPanel">
+                <h3>Contact Me</h3>
+                <br />
+                <h4 style="text-align:left;">My mail: mail@gmail.com</h4>
+                <br />
+                <h3>Find Me In Social Media</h3>
+                <br />
+                <br />
+                <div id="SocialMediaPanel">
+                    <div class="SocialMediaSlot"></div>
+                    <div class="SocialMediaSlot"></div>
+                    <div class="SocialMediaSlot"></div>
+                    <div class="SocialMediaSlot"></div>
+                    <div class="SocialMediaSlot">
+                        <div id="GithubTile">
+                            <a href="https://github.com/nozbi/nozbi" class="TileLink" target="_blank">
+                                <img src="img/github.png" class="LogoImageLink" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="SocialMediaSlot"></div>
+                    <div class="SocialMediaSlot"></div>
+                    <div class="SocialMediaSlot"></div>
+                    <div class="SocialMediaSlot"></div>
+                </div>
+            </div>
+        </div>
+    
+    <div id="BottomPanel">All Rigths Reserved</div>
+   
+</body>
+
+</html>
